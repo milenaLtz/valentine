@@ -1,0 +1,52 @@
+.gallery {
+  text-align: center;
+  padding: 40px;
+}
+
+.gallery__grid {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.memory {
+  position: relative;
+  width: 250px;
+}
+
+.memory img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+.memory__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.3s ease;
+  border-radius: 20px;
+}
+
+.memory:hover .memory__overlay {
+  opacity: 1;
+}
+
+.next-button {
+  margin-top: 40px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  border: none;
+  background: #303920;
+  color: white;
+  cursor: pointer;
+}

@@ -1,22 +1,7 @@
-.content-block {
-  margin: auto;
-  min-width: 800px;
-  width: 80%;
-  height: 70vh;
-  min-height: 555px;
-
-    background: linear-gradient(
-    180deg,
-    #7a935324 0%,
-    #7a9353c6 100%
-  );
-  border-radius: 50px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-
+.valentine {
   &__title {
-    font-family: sans-serif;
     font-size: 2.5rem;
-    color: #fff0f0;
+    color: #2F3A1F;
     text-align: center;
     padding-top: 25%;
   }
@@ -51,7 +36,29 @@
   &__active {
     margin-top: 50px;
     font-size: 1.2rem;
-    color: #fff;
+    color: #2F3A1F;
     text-align: center;
   }
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.success-title {
+  font-size: 3rem;
+  text-align: center;
+  color: #2f3a1f;
+}
+
+.success-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2f3a1f;
 }

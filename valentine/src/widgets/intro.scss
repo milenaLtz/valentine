@@ -1,0 +1,80 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  border-radius: 50px;
+
+
+  &__text {
+    max-width: 700px;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #2f3a1f;
+    margin-bottom: 20px;
+
+    animation: fadeIn 0.8s ease forwards;
+
+    &:first-of-type {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+    padding: 16px 36px;
+    font-size: 1.2rem;
+    border-radius: 999px;
+    border: none;
+    background: #303920;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+      background: #3f4b2a;
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+}
+
+/* 🌸 sanfte Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Mobile Optimierung */
+@media (max-width: 600px) {
+  .intro {
+
+    &__text {
+      font-size: 1.1rem;
+
+      &:first-of-type {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}

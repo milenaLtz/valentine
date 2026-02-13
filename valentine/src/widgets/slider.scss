@@ -1,0 +1,79 @@
+.slider {
+  text-align: center;
+  padding: 40px;
+}
+
+.slider__title {
+  font-size: 1.8rem;
+  color: #2F3A1F;
+  margin-bottom: 30px;
+}
+
+.slider__image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 420px;
+  margin: 40px auto;
+}
+
+.slider img {
+  width: auto;
+  height: 300px;
+  border-radius: 25px;
+  display: block;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* Hover Nachricht */
+.slider__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  text-align: center;
+  border-radius: 25px;
+  opacity: 0;
+  transition: 0.35s ease;
+}
+
+.slider__image-wrapper:hover .slider__overlay {
+  opacity: 1;
+}
+
+/* Controls */
+.slider__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.slider button {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  background: #303920;
+  color: white;
+  cursor: pointer;
+}
+
+.slider button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.slider__counter {
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* Weiter Button */
+.slider__finish {
+  margin-top: 40px;
+  font-size: 1.1rem;
+}
